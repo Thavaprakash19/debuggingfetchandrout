@@ -32,7 +32,7 @@ class BlogItemDetails extends Component {
     const {title, imageUrl, content, avatarUrl, author} = blogData
     return (
       <div className="blog-info">
-        <h1 className="blog-details-title" key={title}>
+        <h1 className="blog-details-title" key="title">
           {title}
         </h1>
 
@@ -41,12 +41,12 @@ class BlogItemDetails extends Component {
             className="author-img"
             src={avatarUrl}
             alt={author}
-            key={author}
+            key="author"
           />
           <p className="details-author-name">{author}</p>
         </div>
 
-        <img className="blog-image" src={imageUrl} alt={title} />
+        <img className="blog-image" src={imageUrl} alt={title} key="content" />
         <p className="blog-content">{content}</p>
       </div>
     )
